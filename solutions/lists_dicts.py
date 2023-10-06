@@ -80,4 +80,10 @@ def majority_element(nums):
     return max_key
 # TODO: Implement a function that filters a dictionary based on a threshold value. If the value of any key in the dictionary is greater than the threshold, that key-value pair should be retained in the output dictionary. Otherwise, it should be excluded.
 def filter_dictionary(data, threshold):
-    pass
+    dic = {}
+    for i in data:
+        if data[i] > threshold:
+            dic[i] = data[i]
+    return dic
+        
+        
